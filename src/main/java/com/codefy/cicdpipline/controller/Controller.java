@@ -14,6 +14,6 @@ public class Controller {
 
     @GetMapping
     public ResponseEntity<String> health(){
-        return new ResponseEntity<String>("hello everyone....", HttpStatus.OK);
+        return ResponseEntity.ok().body("this is the health session...");
     }
 }
