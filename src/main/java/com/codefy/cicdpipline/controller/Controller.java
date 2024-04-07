@@ -11,4 +11,9 @@ public class Controller {
     public ResponseEntity<String> get(){
         return new ResponseEntity<String>("hello everyone....", HttpStatus.OK);
     }
+
+    @GetMapping
+    public ResponseEntity<String> health(){
+        return new ResponseEntity<String>("hello everyone....", HttpStatus.OK);
+    }
 }
